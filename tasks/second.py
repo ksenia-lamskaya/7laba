@@ -2,7 +2,7 @@
 # -*- coding: utf-8 -*-
 
 if __name__ == '__main__':
-    numbers = [int(input('Введите элементы списка: ')) for _ in range(10)]
+    numbers = [int(s) for s in (input('Введите элементы списка: ').split())]
 
     # 1. минимальный по модулю элемент списка
     min_abs = min(numbers, key=abs)
@@ -14,4 +14,5 @@ if __name__ == '__main__':
         sum_abs = sum(abs(x) for x in numbers[zero_index+1:])
         print("Сумма модулей элементов списка, расположенных после первого элемента, равного нулю:", sum_abs)
     else:
-        print('В списке нет элемента 0')
+        print("В списке нет элемента 0")
+
