@@ -1,8 +1,10 @@
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
 
+
 if __name__ == '__main__':
     numbers = [int(s) for s in (input('Введите элементы списка: ').split())]
+
 
     # 1. минимальный по модулю элемент списка
     min_abs = min(numbers, key=abs)
